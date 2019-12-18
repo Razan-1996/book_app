@@ -1,0 +1,33 @@
+<div class = "container">
+
+<h1>All the Authors</h1>
+
+<table class="table striped bordered">
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Genre</th>
+  </tr>
+
+  <% @authors.each do |author| %>
+      <tr>
+        <td><%= link_to author.id %></td>
+        <td><%= author.genre %></td>
+        
+      </tr>
+  <% end %>
+</table>
+
+<div class = "container-fluid" style="background-color: black;">
+<ul class="nav nav-pills nav-justified">
+  <li class="nav-item">
+    <a class="glyphicon glyphicon-pencil" href="/">Author</a>
+  </li>
+  <li class="nav-item">
+    <a class="glyphicon glyphicon-book" href="/author/new">Book</a>
+  </li>
+ 
+ 
+</ul>
+</div>
+</div>
